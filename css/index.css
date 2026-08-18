@@ -1,0 +1,85 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+/* Logo + brand text */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-box {
+    width: 38px;
+    height: 38px;
+    background: #6b2737; /* maroon */
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    gap: 2px;
+    margin: 0px;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    margin: 0px;
+}
+
+.brand-tagline {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 0.5px;
+    margin: 0px;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #6b2737;
+}
+
+/* Login button */
+.btn-login {
+    background: #6b2737;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-login:hover {
+    background: #57202d;
+}
