@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -7,7 +13,6 @@
     border-bottom: 1px solid #eee;
 }
 
-/* Logo + brand text */
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -17,7 +22,7 @@
 .logo-box {
     width: 38px;
     height: 38px;
-    background: #6b2737; /* maroon */
+    background: #6b2737;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -51,7 +56,6 @@
     font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
-/* Nav links */
 .nav-links {
     display: flex;
     list-style: none;
@@ -74,7 +78,7 @@
     background: #6b2737;
     color: white;
     text-decoration: none;
-    padding: 10px 22px;
+    padding: 10px 10px;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 600;
@@ -83,3 +87,325 @@
 .btn-login:hover {
     background: #57202d;
 }
+
+.hero-header {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Playfair Display", Georgia, serif; 
+}
+
+.hero-paragraph {
+    font-size: 18px;
+    color: #f0f0f0;
+    font-weight: 200;
+}
+
+.hero {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    height: 75vh;    
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        to top,
+        rgba(107, 39, 55, 0.75) 0%,  
+        rgba(107, 39, 55, 0.3) 40%,
+        transparent 75%
+    );
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    z-index: 1;
+    color: white;
+    max-width: 600px;
+}
+
+.hero-wrapper {
+    padding-top: 250px;
+    padding-left: 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome {
+    padding: 80px 60px;
+}
+
+.welcome-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-image {
+    flex: 1;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+.welcome-heading {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+}
+
+.welcome-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+.signature {
+    margin-top: 30px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.signature .role {
+    display: block;
+    font-weight: 400;
+    color: #777;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.acheivement {
+    background-color: #6b2737;
+    padding: 40px;
+}
+
+.acheivement-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.big {
+    flex: 2;
+}
+
+.small {
+    flex: 1;
+}
+
+.small p {
+    color: #fff;
+    margin-left: 70px;
+}
+
+.small h3 {
+    font-weight: 700;
+    font-family: "Playfair Display", Georgia, serif;
+    color: #fff;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.big p {
+    margin-right: 100px;
+    font-family: "Playfair Display", Georgia, serif;
+    color: #ffffff;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.stats {
+    padding: 60px;
+    border-bottom: 1px solid #eee;
+}
+
+.stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.stat-item {
+    flex: 1;
+}
+
+.stat-number {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #6b2737;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.curriculum {
+    padding: 60px;
+}
+
+.curriculum-header h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #6b2737;
+    margin-bottom: 12px;
+}
+
+.curriculum-header p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.curriculum-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 32px;
+}
+
+.subject h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.subject p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.reviews {
+    padding: 100px;
+    border-top: 1px solid #eee;
+}
+
+.reviews h2 {
+    margin-bottom: 30px;
+    margin-left: 65px;
+}
+
+.reviews-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.reviews-body {
+    flex: 1;
+}
+
+.reviews-body {
+    border-left: 3px solid #57202d;
+    margin-left: 70px;
+}
+
+.reviews-body p {
+    margin-left: 20px;
+    font-family: "Playfair Display", Georgia, serif;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.announcement {
+    padding: 100px;
+    border-top: 1px solid #eee;
+}
+
+.announcement h2 {
+    margin-bottom: 30px;
+    margin-left: 63px;
+    font-family: "Playfair Display", Georgia, serif;
+
+}
+
+.announcement-table, tr, td {
+    padding: 27px;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+tr td {
+    border-bottom: 1px solid #eee;
+}
+
+table .announcement-text {
+    font-weight: lighter;
+    color: #888;
+}
+
+table, td, .announcement-sub {
+    font-weight: 500;
+}
+
+.enroll {
+    text-align: center;
+    padding: 50px;
+}
+
+.enroll-header {
+    color: #333;
+    padding-bottom: 17px;
+}
+
+.enroll-body {
+    color: #888;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.enroll-button {
+    padding-top: 15px;
+}
+
+.enroll-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link1 {
+    padding: 13px;
+    background-color: #57202d;
+    border: none;
+    border-radius: 3px;
+}
+
